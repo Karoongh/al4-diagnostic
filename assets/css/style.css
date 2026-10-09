@@ -1,0 +1,67 @@
+/* عیب‌یابی گیربکس AL4 / DP0 v2 */
+.al4-wrap{max-width:820px;margin:0 auto;font-family:Tahoma,'Segoe UI',system-ui,sans-serif;color:#1e293b;line-height:1.65;font-size:15px;direction:rtl}
+.al4-header{background:linear-gradient(135deg,#1e3a5f,#0f172a);color:#fff;border-radius:16px;padding:22px 20px;text-align:center;margin-bottom:16px;box-shadow:0 4px 20px rgba(15,23,42,.25)}
+.al4-header h1{font-size:1.35rem;margin:0 0 4px}
+.al4-header p{opacity:.85;font-size:.9rem;margin:0}
+.al4-tabs{display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.al4-tab{flex:1;min-width:90px;padding:10px 8px;border:none;border-radius:10px;background:#e2e8f0;color:#475569;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;transition:.2s}
+.al4-tab.active{background:#2563eb;color:#fff;box-shadow:0 2px 10px rgba(37,99,235,.35)}
+.al4-panel{display:none}
+.al4-panel.active{display:block}
+.al4-card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;border:1px solid #e2e8f0;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.al4-card h2{font-size:1.05rem;margin:0 0 12px;color:#0f172a;display:flex;align-items:center;gap:8px}
+.al4-card h2 .num{background:#2563eb;color:#fff;width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0}
+.al4-hint{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:10px 12px;font-size:.85rem;color:#1e40af;margin-bottom:12px}
+.al4-warn-box{background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;padding:10px 12px;font-size:.85rem;color:#92400e;margin-bottom:12px}
+.al4-field{margin-bottom:12px}
+.al4-field label{display:block;font-size:.88rem;font-weight:600;color:#334155;margin-bottom:5px}
+.al4-field select,.al4-field input[type=text],.al4-field input[type=number]{width:100%;padding:11px 12px;border:1px solid #cbd5e1;border-radius:10px;font-size:.95rem;background:#fff;-webkit-appearance:none;appearance:none}
+.al4-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2364748b' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 12px center;padding-left:32px}
+.al4-field select:focus,.al4-field input:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.al4-field small{display:block;font-size:.78rem;color:#64748b;margin-top:3px}
+.al4-checks{display:flex;flex-direction:column;gap:8px}
+.al4-checks label{display:flex;align-items:flex-start;gap:10px;font-size:.9rem;font-weight:400;cursor:pointer;padding:8px 10px;border-radius:8px;background:#f8fafc;border:1px solid #e2e8f0}
+.al4-checks label:has(input:checked){background:#eff6ff;border-color:#93c5fd}
+.al4-checks input{margin-top:3px;accent-color:#2563eb;width:18px;height:18px;flex-shrink:0}
+.al4-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.al4-grid2{grid-template-columns:1fr}}
+.al4-btn-row{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap}
+.al4-btn{flex:1;min-width:120px;padding:13px 16px;border:none;border-radius:12px;font-size:.95rem;font-weight:700;cursor:pointer;transition:.15s}
+.al4-btn-main{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff}
+.al4-btn-main:active{transform:scale(.98)}
+.al4-btn-sec{background:#e2e8f0;color:#334155}
+.al4-btn-sec:active{background:#cbd5e1}
+.al4-res{display:none;margin-top:8px}
+.al4-res.show{display:block}
+.al4-verdict{border-radius:14px;padding:18px 16px;text-align:center;margin-bottom:12px;border:2px solid}
+.al4-verdict.bad{background:#fef2f2;border-color:#dc2626;color:#991b1b}
+.al4-verdict.warn{background:#fffbeb;border-color:#d97706;color:#92400e}
+.al4-verdict.ok{background:#f0fdf4;border-color:#16a34a;color:#166534}
+.al4-verdict.info{background:#f0f9ff;border-color:#0284c8;color:#0c4a6e}
+.al4-verdict h3{font-size:1.15rem;margin:0 0 4px}
+.al4-verdict .conf{font-size:.85rem;opacity:.85}
+.al4-block{background:#fff;border-radius:12px;padding:14px;margin-bottom:10px;border:1px solid #e2e8f0}
+.al4-block h4{font-size:.95rem;margin:0 0 8px;color:#0f172a}
+.al4-issue{padding:10px 12px;border-radius:10px;margin-bottom:8px;border-right:4px solid;font-size:.9rem}
+.al4-issue.critical{background:#fef2f2;border-color:#dc2626}
+.al4-issue.high{background:#fff7ed;border-color:#f97316}
+.al4-issue.medium{background:#fefce8;border-color:#eab308}
+.al4-issue .t{font-weight:700;margin-bottom:2px}
+.al4-issue .d{color:#475569;font-size:.87rem}
+.al4-steps{counter-reset:step}
+.al4-step{position:relative;padding:10px 42px 10px 12px;margin-bottom:8px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;font-size:.88rem}
+.al4-step::before{counter-increment:step;content:counter(step);position:absolute;right:12px;top:10px;width:22px;height:22px;background:#2563eb;color:#fff;border-radius:50%;font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:22px;text-align:center}
+.al4-tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.75rem;font-weight:600;margin-left:4px;background:#bae6fd;color:#0c4a6e}
+.al4-table{width:100%;border-collapse:collapse;font-size:.85rem;margin:8px 0}
+.al4-table th,.al4-table td{padding:8px 6px;border:1px solid #e2e8f0;text-align:right}
+.al4-table th{background:#f1f5f9;font-weight:600}
+.al4-list{padding-right:18px;font-size:.88rem;color:#334155;margin:0}
+.al4-list li{margin-bottom:6px}
+.al4-footer-note{text-align:center;font-size:.78rem;color:#64748b;padding:16px 8px 8px}
+.al4-accordion{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:8px;overflow:hidden}
+.al4-acc-head{padding:12px 14px;background:#f8fafc;font-weight:600;font-size:.9rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.al4-acc-head:active{background:#f1f5f9}
+.al4-acc-body{display:none;padding:12px 14px;font-size:.87rem;border-top:1px solid #e2e8f0;background:#fff}
+.al4-acc-body.open{display:block}
+.al4-acc-head .arrow{transition:.2s;font-size:.8rem;color:#64748b}
+.al4-acc-head.open .arrow{transform:rotate(180deg)}
